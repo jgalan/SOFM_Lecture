@@ -1,5 +1,7 @@
 import ROOT
 
+### This is an example using ROOT to visualize the resulting dataset domains.
+
 from ROOT import (
     TChain, TFile, TTree, TCanvas, TPad,
     TH1D, TH2D, TH3D,

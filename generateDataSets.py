@@ -20,6 +20,7 @@ nVars = len(populations[0])
 
 sigmas = [2.1, 5.5, 0.4, 3.2, 1.1, 0.5, 3.3 ]
 
+### TODO Replace `rootRnd` by any other libraries you use for random number generator
 rootRnd = ROOT.TRandom3()
 rootRnd.SetSeed( int (time.time()) ) 
 

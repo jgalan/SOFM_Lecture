@@ -59,8 +59,8 @@ wNetwork = initialize_network(  )
 
 ######################################################
 ### Above code (together with SOFM.py) is given to the student
-###
-### See student.py
+### 
+### The following code needs to be completed by the student
 ###
 ### The output file must contain the  weights vector of each network cell.
 ### Proposed format:
@@ -71,9 +71,10 @@ wNetwork = initialize_network(  )
 ### 29 29 w1 .... wN
 ###
 ### The coming code is work for the student.
-### So this is a possible solution to the exercise. 
-### This must be removed from the lecture.
 ###
+### 1. Implement update_neuron
+### 2. Implement update_region
+### 
 
 ### Proposed function scheme
 def R( t ):
@@ -126,7 +127,7 @@ def networkTraining( ):
     for iteration in range(Iterations):
         for v in dataset:
 
-            ## TOBE implemented. Use maxSamples to reduce the computational cost
+            ## Use maxSamples to reduce the computational cost
             ## and reduce the time invested in testing your code
 
             update_region( v[1:8], iteration )
